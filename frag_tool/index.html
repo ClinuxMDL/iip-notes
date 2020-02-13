@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="IIP team">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Fragment Tool - IIP-AIChem之科研探索</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Fragment Tool";
+    var mkdocs_page_input_path = "frag_tool.md";
+    var mkdocs_page_url = "/frag_tool/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> IIP-AIChem之科研探索</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../RL_molopt/">RL-Mol-Opt</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Fragment Tool</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">分子片段化</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#fragment">fragment相关工具</a></li>
+        
+            <li><a class="toctree-l3" href="#synthesis">synthesis相关工具</a></li>
+        
+            <li><a class="toctree-l3" href="#de-novo-drug-design">De novo drug design</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">IIP-AIChem之科研探索</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Fragment Tool</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">分子片段化<a class="headerlink" href="#_1" title="Permanent link"></a></h1>
+<p>Constructing high-quality libraries of molecular building blocks is essential for successful fragment-based drug discovery. Given a collection of molecules, fragmentation generates a set of unique fragments comprising larger moieties, bricks, and smaller linkers connecting bricks. These building blocks can subsequently be used to construct virtual screening libraries for targeted drug discovery.</p>
+<hr />
+<h2 id="fragment">fragment相关工具<a class="headerlink" href="#fragment" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Paper</th>
+<th>Code</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017</td>
+<td><a href="../paper/emolfrag_2017.pdf">eMolFrag</a></td>
+<td><a href="https://github.com/liutairan/eMolFrag">https://github.com/liutairan/eMolFrag</a></td>
+<td><a href="#eMolFrag">note</a></td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="http://agave.health.unm.edu/iphace/iPHACEdir/jchem/doc/user/Fragmenter.html#intro">Fragmenter</a></td>
+<td></td>
+<td>From ChemAxon</td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://academic.oup.com/bioinformatics/article-abstract/30/14/2081/2391178">molBLOCKS</a></td>
+<td><a href="https://compbio.cs.princeton.edu/molblocks/">https://compbio.cs.princeton.edu/molblocks/</a></td>
+<td><a href="#molBLOCKS">Note</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="synthesis">synthesis相关工具<a class="headerlink" href="#synthesis" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Paper</th>
+<th>Code</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016</td>
+<td><a href="../paper/esynth_2016.pdf">eSynth</a></td>
+<td><a href="https://github.com/liutairan/eSynth">https://github.com/liutairan/eSynth</a></td>
+<td><a href="#eSynth">Note</a></td>
+</tr>
+<tr>
+<td>2008</td>
+<td><a href="https://link.springer.com/article/10.1007/s10822-008-9221-8">CONFIRM</a></td>
+<td></td>
+<td>[Note]</td>
+</tr>
+<tr>
+<td>2018</td>
+<td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1747-0285.2008.00761.x">AutoGrow</a> v3.1.3</td>
+<td><a href="https://git.durrantlab.pitt.edu/jdurrant/autogrow/tree/master">https://git.durrantlab.pitt.edu/jdurrant/autogrow/tree/master</a></td>
+<td><a href="#AutoGrow">Note</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="de-novo-drug-design">De novo drug design<a class="headerlink" href="#de-novo-drug-design" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Paper</th>
+<th>Code</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1992</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/pubmed/1583540">LUDI</a></td>
+<td></td>
+<td>binding-site point connection</td>
+</tr>
+<tr>
+<td>1992</td>
+<td><a href="https://pubs.acs.org/doi/abs/10.1021/jm0492296">LEA3D</a></td>
+<td></td>
+<td>fragment connection</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://pubs.acs.org/doi/abs/10.1021/ci100350u">Ligbuilder</a></td>
+<td></td>
+<td>fragment connection</td>
+</tr>
+<tr>
+<td>2016</td>
+<td><a href="../paper/esynth_2016.pdf">eSynth</a></td>
+<td></td>
+<td>fragment connection</td>
+</tr>
+<tr>
+<td>1991</td>
+<td><a href="https://www.sciencedirect.com/science/article/abs/pii/S0040402001865030">LEGEND</a></td>
+<td></td>
+<td>sequential build-up</td>
+</tr>
+<tr>
+<td>1993</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/pubmed/8320553">SPROUT</a></td>
+<td></td>
+<td>sequential build-up</td>
+</tr>
+<tr>
+<td>2004</td>
+<td><a href="https://pubs.acs.org/doi/abs/10.1021/ci034290p">CoG</a></td>
+<td></td>
+<td>random connection</td>
+</tr>
+<tr>
+<td>2007</td>
+<td><a href="https://pubs.acs.org/doi/abs/10.1021/ci6005307">Flux</a></td>
+<td></td>
+<td>random connection</td>
+</tr>
+</tbody>
+</table>
+<h3 id="emolfrag">eMolFrag<a class="headerlink" href="#emolfrag" title="Permanent link"></a></h3>
+<ul>
+<li>de novo drug design require an initial set of building blocks or fragments</li>
+<li>then efficient fragmentation techniques, <ul>
+<li><a href="https://pubs.acs.org/doi/abs/10.1021/ci970429i">RECAP</a>: Retrosynthetic combinatorial analysis procedure<ul>
+<li>dissected based on a set of 11 bond types, following simple rules such as leaving cyclic bonds and alkyl groups smaller than five carbons intact. These rules ensure that major structural features of organic compounds, such as ring motifs, are preserved.</li>
+</ul>
+</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18792903">BRICS</a>: breaking retrosynthetically interesting chemical substructures<ul>
+<li>the bond type criteria used by RECAP from 11 to 16 taking into account the chemical environment of each bond type and the surrounding substructures. Additional filters are also applied in order to prevent generating small and unwanted fragments.</li>
+</ul>
+</li>
+<li><a href="https://pubs.acs.org/doi/abs/10.1021/ci600338x">Scaffold_Tree</a>: extract and classify chemical scaffolds by pruning side chains and removing peripheral ring moieties.</li>
+</ul>
+</li>
+<li>current drawback: not consider the chemical context of the fragments. the connectivity information on a fragment is not stored while extracting building blocks</li>
+<li>goal: decomposed into two types of building blocks: bricks and connecting linkers</li>
+<li>method: <ol>
+<li>Fragmentation: BRICKS, 16 chemical environments defined. A brick fragment is a molecular construct having at least four non-hydrogen atoms. Subsequently, bricks are removed from a molecule and the remaining fragments are classified as linkers.
+<img alt="fig_brick_demo" src="../img/ex_brick_demo.png" />
+<img alt="fig_linker_demo" src="../img/ex_linker_demo.png" /></li>
+<li>Mitigation of Fragment Redundancy based on Tanimoto coefficient</li>
+</ol>
+</li>
+<li>Dataset: DUD-E 20408 active compds. against 102 targets.</li>
+<li>Application to Antagonists of the Adenosine Receptor.</li>
+</ul>
+<h3 id="autogrow">AutoGrow<a class="headerlink" href="#autogrow" title="Permanent link"></a></h3>
+<p>TODO</p>
+<h3 id="fragmenter">Fragmenter<a class="headerlink" href="#fragmenter" title="Permanent link"></a></h3>
+<p>TODO</p>
+<h3 id="molblocks">molBLOCKS<a class="headerlink" href="#molblocks" title="Permanent link"></a></h3>
+<p>TODO</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../RL_molopt/" class="btn btn-neutral" title="RL-Mol-Opt"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2020, Maintained by the <a href="http://www.iipharma.com.cn/">IIP Team</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ClinuxMDL/iip-study-notes" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../RL_molopt/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
